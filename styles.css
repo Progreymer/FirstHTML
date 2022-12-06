@@ -1,12 +1,18 @@
+*{
+    box-sizing: border-box;
+}
 body{
     font-family:'Trebuchet MS';
-    background-color: aqua;
+    background-color: rgb(226, 223, 157);
     width: 100vw;
     height: 100vh;
     margin: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
 }
 h1 {
-    background-color: aqua;
 }
 
 h1::selection{
@@ -22,10 +28,12 @@ input {
     font-family: 'Trebuchet MS';
     transition: .4s;
     border-style: dashed;
-    background-color: aqua;
+    background-color: rgb(226, 223, 157);
 
 }
-
+input::placeholder{
+    color: #3d3824;
+}
 input:hover{
     transition: .4s;
     border-radius: 10px;
@@ -34,5 +42,15 @@ input:hover{
 
 button{
     font-size: 24px;
+    color: #3d3824;
     outline-style:ridge;
+}
+
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
 }
