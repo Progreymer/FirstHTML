@@ -3,45 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <title>My site</title>
-        <style>
-            body{
-                font-family:'Trebuchet MS';
-            }
-            h1 {
-                background-color: aqua;
-            }
-            
-            h1::selection{
-                background-color: beige;
-            }
-            h4{
-                margin-bottom: 14px;
-            }
-            input {
-                display: block;
-                margin-bottom: 8px;
-            }
-        </style>
-        <script>
-            function verify_creds(){
-                let userName = document.usernameForm.username.value;
-                let passWord = document.usernameForm.password.value;
-                if (userName == "Stoyan" && passWord == "12345"){
-                    location.href = "page2.html";
-                }
-            }
-        </script>
+        <link rel="stylesheet" href="styles.css">
+        <script src="app.js" defer></script>
     </head>
     <body>
         <h1 style="color: #a339af">Welcome to my site</h1>
         <h4 id="user question">Login </h4>
+        <h5 id="extra-message" style="color: #cc1919"></h5>
         <form  name="usernameForm" id="usernameForm">
-
             <input placeholder="Username" name="username" id="username">
-            <input placeholder="Password" name="password" id="password">
-            <button type="button" name="submit" title="Submit" onclick="verify_creds()">Submit</button>
+            <input placeholder="Password" name="password" id="password" type="password">
+            <button id="submit" type="button" name="submit" title="Submit" onclick="verify_creds()">Submit</button>
 
         </form>
-        
+      
     </body>
 </html>
