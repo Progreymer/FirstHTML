@@ -14,12 +14,34 @@
             h1::selection{
                 background-color: beige;
             }
+            h4{
+                margin-bottom: 14px;
+            }
+            input {
+                display: block;
+                margin-bottom: 8px;
+            }
         </style>
+        <script>
+            function verify_creds(){
+                let userName = document.usernameForm.username.value;
+                let passWord = document.usernameForm.password.value;
+                if (userName == "Stoyan" && passWord == "12345"){
+                    location.href = "page2.html";
+                }
+            }
+        </script>
     </head>
     <body>
         <h1 style="color: #a339af">Welcome to my site</h1>
-        <h4>I didn't ask</h4>
-        <textarea name="Intput" id="2134" cols="30" rows="10"></textarea>
+        <h4 id="user question">Login </h4>
+        <form  name="usernameForm" id="usernameForm">
+
+            <input placeholder="Username" name="username" id="username">
+            <input placeholder="Password" name="password" id="password">
+            <button type="button" name="submit" title="Submit" onclick="verify_creds()">Submit</button>
+
+        </form>
+        
     </body>
-    
 </html>
