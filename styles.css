@@ -1,5 +1,9 @@
 body{
     font-family:'Trebuchet MS';
+    background-color: aqua;
+    width: 100vw;
+    height: 100vh;
+    margin: 10px;
 }
 h1 {
     background-color: aqua;
@@ -12,7 +16,23 @@ h4{
     margin-bottom: 14px;
 }
 input {
-    display: block;
+    display:contents;
     margin-bottom: 8px;
-    d
+    font-size: 24px;
+    font-family: 'Trebuchet MS';
+    transition: .4s;
+    border-style: dashed;
+    background-color: aqua;
+
+}
+
+input:hover{
+    transition: .4s;
+    border-radius: 10px;
+    
+}
+
+button{
+    font-size: 24px;
+    outline-style:ridge;
 }
